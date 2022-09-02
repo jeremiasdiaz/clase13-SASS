@@ -1,13 +1,5 @@
 footer {
-  form {
-    input {
-      padding: 15px;
-      &:focus {
-        background-color: rgba(13, 111, 78, 0.534);
-        &::placeholder {
-          color: aliceblue;
-        }
-      }
-    }
-  }
+  background-color: $verde-claro;
+  display: flex;
+  align-items: center;
 }
