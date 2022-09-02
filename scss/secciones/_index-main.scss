@@ -1,0 +1,30 @@
+.main-index {
+  background-color: aquamarine;
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  .card {
+    max-width: 350px;
+    margin: 0 autos;
+    h2 {
+      font-family: sans-serif;
+      &:hover {
+        color: coral;
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .main-index {
+    flex-direction: row;
+    .card {
+      h2 {
+        &:hover {
+          background-color: rgb(123, 30, 229);
+        }
+      }
+    }
+  }
+}

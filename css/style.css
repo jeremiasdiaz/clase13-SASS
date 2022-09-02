@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.main-index {
+  background-color: aquamarine;
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column; }
+  .main-index .card {
+    max-width: 350px;
+    margin: 0 autos; }
+    .main-index .card h2 {
+      font-family: sans-serif; }
+      .main-index .card h2:hover {
+        color: coral; }
+
+@media (min-width: 550px) {
+  .main-index {
+    flex-direction: row; }
+    .main-index .card h2:hover {
+      background-color: #7b1ee5; } }
+
+header {
+  background-color: #a7f0d6; }
+
+footer form input {
+  padding: 15px; }
+  footer form input:focus {
+    background-color: rgba(13, 111, 78, 0.534); }
+    footer form input:focus::placeholder {
+      color: aliceblue; }
