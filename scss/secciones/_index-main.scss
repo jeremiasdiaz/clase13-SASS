@@ -1,28 +1,35 @@
 .main-index {
-  background-color: aquamarine;
-  text-align: center;
-  min-height: 50vh;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  .card {
-    max-width: 350px;
-    margin: 0 autos;
-    h2 {
-      font-family: sans-serif;
-      &:hover {
-        color: coral;
+  align-items: center;
+  img {
+    padding: 3vw;
+  }
+
+  .cartas {
+    display: flex;
+    flex-wrap: nowrap;
+    .card {
+      background-color: $gris;
+      h2 {
+        font-family: sans-serif;
+        &:hover {
+          color: $coral;
+        }
       }
     }
   }
 }
 
-@media (min-width: 550px) {
+@media (max-width: 768px) {
   .main-index {
-    flex-direction: row;
-    .card {
+    .cartas {
+      display: flex;
+      flex-direction: column;
       h2 {
         &:hover {
-          background-color: rgb(123, 30, 229);
+          background-color: $violeta;
         }
       }
     }

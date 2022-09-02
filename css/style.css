@@ -4,27 +4,38 @@
   box-sizing: border-box; }
 
 .main-index {
-  background-color: aquamarine;
-  text-align: center;
-  min-height: 50vh;
   display: flex;
-  flex-direction: column; }
-  .main-index .card {
-    max-width: 350px;
-    margin: 0 autos; }
-    .main-index .card h2 {
-      font-family: sans-serif; }
-      .main-index .card h2:hover {
-        color: coral; }
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; }
+  .main-index img {
+    padding: 3vw; }
+  .main-index .cartas {
+    display: flex;
+    flex-wrap: nowrap; }
+    .main-index .cartas .card {
+      background-color: #d5d5d5; }
+      .main-index .cartas .card h2 {
+        font-family: sans-serif; }
+        .main-index .cartas .card h2:hover {
+          color: coral; }
 
-@media (min-width: 550px) {
-  .main-index {
-    flex-direction: row; }
-    .main-index .card h2:hover {
+@media (max-width: 768px) {
+  .main-index .cartas {
+    display: flex;
+    flex-direction: column; }
+    .main-index .cartas h2:hover {
       background-color: #7b1ee5; } }
 
 header {
-  background-color: #a7f0d6; }
+  background-color: #a7f0d6;
+  height: 15vh; }
+  header nav {
+    padding: 5vh; }
+    header nav a {
+      text-decoration: none;
+      list-style: none;
+      color: black; }
 
 footer form input {
   padding: 15px; }
